@@ -1,0 +1,20 @@
+Logika
+  https://projecteuler.net/archives
+
+  Loginiai uždaviniai:
+  13. Turite 2 kiaušinius ir galite įeiti į 100 aukštų pastatą. O kiaušiniai gali būti arba labai tvirti, arba labai trapūs.
+  , kitaip tariant, gali sudužti krisdami ir iš pirmo aukšto, bet gali nesudužti krisdami net iš viršutinio aukšto.
+  Abu kiaušiniai yra identiški. Jums reikia išsiaiškinti, koks pastato aukštas yra aukščiausias,
+  iš kurio krisdami kiaušiniai nedūžta. Klausimas: kiek mažiausiai bandymų reikia atlikti norint
+  nustatyti koks yra aukščiausias kiaušiniams saugus aukštis?
+
+Java
+  https://netbeans.org/
+  https://www.youtube.com/watch?v=Hl-zzrqQoSE&list=PLFE2CE09D83EE3E28
+
+Javascript
+
+
+OOP
+
+SQL
