@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import java.util.Random;
+import java.util.EnumSet;
 
 class apples{
 	
@@ -263,17 +263,129 @@ class apples{
 //		System.out.println("The sum of these number is " + sum);
 //	}
 	
+//	public static void main(String[] args) {
+//		Random rand = new Random();
+//		int freq[] = new int[7];
+//		
+//		for(int roll = 1; roll < 1000; roll++) {
+//			++freq[1 + rand.nextInt(6)];
+//		}
+//		System.out.println("Face\tFrequency");
+//		
+//		for(int face = 1; face < freq.length; face++) {
+//			System.out.println(face+"\t"+freq[face]);
+//		}
+//	}
+	
+//	public static void main(String[] args) {
+//		int bucky[] = {1,2,3,4,5,6,7,8,9};
+//		int total = 0;
+//		
+//		for(int x: bucky) {
+//			total+=x;
+//		}
+//		System.out.println(total);	
+//	}
+	
+//	public static void main(String[] args) {
+//		int bucky[] = {1,2,3,4,5,6,7,8,9};
+//		change(bucky);
+//
+//		for(int y:bucky)
+//			System.out.println(y);
+//	}
+//	public static void change(int x[] ) {
+//		for(int counter = 0; counter < x.length; counter++) {
+//			x[counter]+=5;
+//		}
+//	}
+	
+//	public static void main(String[] args) {
+//		int firstArray[][] = {{8,9,10,11,12},{13,14,15,16,17}};
+//		int secondArray[][] = {{30,20,5,456,42,2},{12,13,14,15,16,17},{56},{45,69,95}};
+//		System.out.println("FirstArray");
+//		display(firstArray);
+//		System.out.println("SecondArray");
+//		display(secondArray);
+//	}
+//	public static void display(int x[][]) {
+//		for(int row = 0; row < x.length; row++) {
+//			for(int column = 0; column < x[row].length; column++) {
+//				System.out.print(x[row][column]+"\t");
+//			}
+//			System.out.println();
+//		}
+//	}
+	
+	
+//	public static void main(String[] args) {
+//		System.out.print(average(1,2,3,4,5,6,7,8,9));
+//	}
+//	public static int average(int...numbers) {
+//		int total = 0;
+//		for(int x:numbers)
+//			total+= x;
+//		
+//		return total/numbers.length;
+//	}
+	
+//	public static void main(String[] args) {
+//		tuna tunaObject = new tuna();
+//		System.out.println(tunaObject.toMilitary());
+//		System.out.println(tunaObject.toString());
+//
+//		tunaObject.setTime(13, 24, 9);
+//		System.out.println(tunaObject.toMilitary());
+//		System.out.println(tunaObject.toString());
+//		
+//		
+//	}
+	
+//	public static void main(String[] args) {
+//		tuna tunaObject = new tuna();
+//		tuna tunaObject2 = new tuna(5);
+//		tuna tunaObject3 = new tuna(5,13);
+//		tuna tunaObject4 = new tuna(5,11,11);
+//		
+//		System.out.printf("%s\n", tunaObject.toMilitary());
+//		System.out.printf("%s\n", tunaObject2.toMilitary());
+//		System.out.printf("%s\n", tunaObject3.toMilitary());
+//		System.out.printf("%s\n", tunaObject4.toMilitary());	
+//	}
+	
+//	public static void main(String[] args) {
+//		potpie potObject = new potpie(4,5,6);
+//		tuna tunaObject = new tuna("Bucky", potObject);
+//		
+//		System.out.println(tunaObject);
+//	}
+	
+//	public static void main(String[] args) {
+//		for(tuna people: tuna.values()) {
+//			System.out.printf("%s\t%s\t%s\n", people, people.getDesc(), people.getYear());
+//		}
+//			System.out.println("\nAnd Now for the range constants!!!\n");
+//			
+//		for(tuna people: EnumSet.range(tuna.kelsey, tuna.candy)) {
+//			System.out.printf("%s\t%s\t%s\n", people, people.getDesc(), people.getYear()); 
+//		}
+//	}
+	
+//	public static void main(String[] args) {
+//		tuna member1 = new tuna("Megan", "Fox");
+//		tuna member2 = new tuna("Ariana", "Grande");
+//		tuna member3 = new tuna("Taylor", "Swift");
+//		
+//		System.out.println(tuna.getMembers());
+//	}
+	
 	public static void main(String[] args) {
-		Random rand = new Random();
-		int freq[] = new int[7];
+		tuna tunaObject = new tuna(10);
 		
-		for(int roll = 1; roll < 1000; roll++) {
-			++freq[1 + rand.nextInt(6)];
-		}
-		System.out.println("Face\tFrequency");
-		
-		for(int face = 1; face < freq.length; face++) {
-			System.out.println(face+"\t"+freq[face]);
+		for(int i = 0; i < 5; i++) {
+			tunaObject.add();
+			System.out.printf("%s", tunaObject);
+			
 		}
 	}
 }
