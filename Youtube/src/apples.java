@@ -379,13 +379,27 @@ class apples{
 //		System.out.println(tuna.getMembers());
 //	}
 	
+//	public static void main(String[] args) {
+//		tuna tunaObject = new tuna(10);
+//		
+//		for(int i = 0; i < 5; i++) {
+//			tunaObject.add();
+//			System.out.printf("%s", tunaObject);
+//			
+//		}
+//	}
+	
 	public static void main(String[] args) {
-		tuna tunaObject = new tuna(10);
+		int multi1 = 3;
+		int multi2 = 5;
 		
-		for(int i = 0; i < 5; i++) {
-			tunaObject.add();
-			System.out.printf("%s", tunaObject);
-			
+		int sum;
+		
+		for(sum = 0; sum < 1000; sum++) {
+			int multiples = multi1 + multi2;
+			sum+=multiples;
+			System.out.println(sum);
 		}
+		
 	}
 }
