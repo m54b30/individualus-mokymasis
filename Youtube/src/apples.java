@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.EnumSet;
+import java.util.Random;
 
 class apples{
 	
@@ -390,16 +391,30 @@ class apples{
 //	}
 	
 	public static void main(String[] args) {
-		int multi1 = 3;
-		int multi2 = 5;
-		
-		int sum;
-		
-		for(sum = 0; sum < 1000; sum++) {
-			int multiples = multi1 + multi2;
-			sum+=multiples;
-			System.out.println(sum);
-		}
+//		233168
+		final int limit = 99999;
+		int sum = sumOf(3, limit) +sumOf(5, limit) -sumOf(15, limit);
+		System.out.println(sum);
 		
 	}
+	
+	public static int sumOf(int d, int ceil) {
+		int n = ceil / d;
+		return n*d*(1+n)/2;
+	}
+	
+//	public static void main(String[] args) {
+//		Random rand = new Random();
+//		double freq[] = new double[7];
+//		final double rollCount =  1000;
+//		
+//		for(int roll = 0; roll < rollCount; roll++) {
+//			++freq[1 + rand.nextInt(6)];
+//		}
+//		System.out.println("Face\tFrequency");
+//		
+//		for(int face = 1; face < freq.length; face++) {
+//			System.out.println(face+"\t"+freq[face]*100/rollCount +"%");
+//		}
+//	}
 }
