@@ -390,19 +390,6 @@ class apples{
 //		}
 //	}
 	
-	public static void main(String[] args) {
-//		233168
-		final int limit = 99999;
-		int sum = sumOf(3, limit) +sumOf(5, limit) -sumOf(15, limit);
-		System.out.println(sum);
-		
-	}
-	
-	public static int sumOf(int d, int ceil) {
-		int n = ceil / d;
-		return n*d*(1+n)/2;
-	}
-	
 //	public static void main(String[] args) {
 //		Random rand = new Random();
 //		double freq[] = new double[7];
@@ -417,4 +404,50 @@ class apples{
 //			System.out.println(face+"\t"+freq[face]*100/rollCount +"%");
 //		}
 //	}
+	
+	
+//	Uzduotis nr1
+	
+//	public static void main(String[] args) {
+//		233168
+//		final int limit = 99999;
+//		int sum = sumOf(3, limit) +sumOf(5, limit) -sumOf(15, limit);
+//		System.out.println(sum);
+//		
+//	}
+//	public static int sumOf(int d, int ceil) {
+//		int n = ceil / d;
+//		return n*d*(1+n)/2;
+//	}
+	
+//	Uzduotis nr2
+	
+	public static void main(String[] args) {
+		
+		final int limit = 4000000;
+		int number1 = 0;
+		int number2 = 1;
+		int sum = 0;
+		int evenSum = 0;
+		
+		while(sum < limit) {
+			sum = number1 + number2;
+			number1 = number2;
+			number2 = sum;
+			if(sum%2==0) {
+				evenSum = evenSum + sum;
+			}
+		}
+		System.out.println(evenSum);
+		
+		for(int number3 = 3; number3 < limit;) {
+			number3 = number1 + number2;
+			number1 = number2;
+			number2 = number3;
+			if(number3 % 2 == 0) {
+				sum+= number2;
+				System.out.println(sum);
+			}
+		}
+	}	
 }
